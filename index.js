@@ -1,12 +1,12 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateCards = require("./templates/employeecards");
+const generateCards = require("./employeecards");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const util = require('util');
 
-cosnt managerArray = [];
+const managerArray = [];
 const engineerArray = [];
 const internArray = [];
 
@@ -27,11 +27,11 @@ async function createManager() {
       type: 'input',
       name: 'managerPhone',
       message: "What is the Manager's phone number?"
-    },
+    }
 
   ])
 
-  then.(function({ managerName, managerId, managerEmail, managerPhone }) {
+  .then(function({ managerName, managerId, managerEmail, managerPhone }) {
     const manager = new Manager(
       managerName,
       managerId,
@@ -39,7 +39,7 @@ async function createManager() {
       managerPhone
     );
     managerArray.push(manager);
-    creatTeam();
+    createTeam();
     });
     
     
@@ -69,7 +69,7 @@ function createTeam() {
       case "Engineer":
         createEngineer();
         break;
-        case "Intern";
+        case "Intern":
         createIntern();
         break;
         default:
@@ -82,7 +82,7 @@ function createTeam() {
 
 function createEngineer() {
   return inquirer
-  .prompt{[
+  .prompt([
     {
       type: "input",
       name: "engineerName",
@@ -103,7 +103,9 @@ function createEngineer() {
       name: "engineerGithub",
       message: "What is the engineer's github address?"
     }
-  ]}
+  ])
+
+
   .then(function( {
     engineerName,
     engineerId,
@@ -125,22 +127,23 @@ function createEngineer() {
 //intern
 
 function createIntern() {
-  return inquirer.prompt([
+  return inquirer
+  .prompt([
     {
       type: "input",
       name: "internName",
       message: "What is the intern's name?"
-    }
+    },
     {
       type: "input",
       name: "internId",
       message: "What is the intern's employee ID number?"
-    }
+    },
     {
       type: "input",
       name: "internEmail",
       message: "What is the intern's email address?"
-    }
+    },
     {
       type: "input",
       name: "internSchool",

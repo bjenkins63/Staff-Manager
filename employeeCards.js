@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
-const createHTML = require("./main.JS");
+const createHTML = require("./main.js");
 
 const generateCards = (managerCard, engineerCard, internCard) => {
     const createManager = managerCard.map(manager => {
@@ -13,7 +13,7 @@ const generateCards = (managerCard, engineerCard, internCard) => {
         </div>
         <div class="card-body bg-danger">
         <p>ID: ${manager.id}</p>
-        <p>Emial: ${manager.email}<a href="mailto:${manage.email}"></a></p>
+        <p>Emial: ${manager.email}<a href="mailto:${manager.email}"></a></p>
         <p>Office #: ${manager.getOffice()}</p>
         </div>
         </div>`;
