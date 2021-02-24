@@ -10,12 +10,16 @@ const managerArray = [];
 const engineerArray = [];
 const internArray = [];
 
-async function createManager() {
-  return inquirer.prompt([
 
- {
+
+
+async function createManager() {
+  return inquirer
+  
+  .prompt([
+    {
       type: 'input',
-      name: 'ManagerName',
+      name: 'managerName',
       message: "What is the Manager's name?"
     },
     {
@@ -53,7 +57,7 @@ function createTeam() {
   return inquirer.prompt([
     {
       type: "list",
-      name: "teamManager",
+      name: "teamMember",
       message: "Would you like to add an engineer or intern?",
       choices: [
         "Engineer",
