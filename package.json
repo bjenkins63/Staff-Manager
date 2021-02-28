@@ -1,7 +1,7 @@
 {
   "name": "Staff-Manager",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Description Generate an html page displaying the members of your team with their information. This app works on the command line and will ask the manager to submit their information then proceed to create their team.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

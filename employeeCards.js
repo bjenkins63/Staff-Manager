@@ -7,7 +7,7 @@ const createHTML = require("./main.js");
 const generateCards = (managerCard, engineerCard, internCard) => {
     const createManager = managerCard.map(manager => {
         return `
-<div class="card text-white bg-danger ml-3">
+<div class="card text-black bg-white ml-3">
     <div class="card-header">
         <h2 class="card-title">${manager.name}</h2>
             <h3 class="mr-3">${manager.getRole()}</h3>
@@ -21,7 +21,7 @@ const generateCards = (managerCard, engineerCard, internCard) => {
 
     const createEngineer = engineerCard.map(engineer => {
         return `
-<div class="card text-white bg-dark ml-3">
+<div class="card text-black bg-olive ml-3">
     <div class="card-header">
         <h2 class="card-title">${engineer.name}</h2>
             <h3 class="mr-3">${engineer.getRole()}</h3>
@@ -35,7 +35,7 @@ const generateCards = (managerCard, engineerCard, internCard) => {
 
     const createIntern = internCard.map(intern => {
         return `
-<div class="card text-black bg-grey ml-3">
+<div class="card text-black bg-palegoldenrod ml-3">
     <div class="card-header">
         <h2 class="card-title text-black">${intern.name}</h2>
                 <h3 class="mr-3 text-black"></i>${intern.getRole()}</h3>
