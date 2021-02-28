@@ -31,7 +31,7 @@ _________
 **Above:**  *This shot displays how the questions are presented and answered.*
 
 
-**Below:** *This is the finished product, placed into the project folder as a team.html file.*
+**Below:** *This is the finished product, placed into the project folder as a team.html file, placed in the folder named dist.*
 
 _________
 

@@ -28,7 +28,7 @@ const generateCards = (managerCard, engineerCard, internCard) => {
         </div>
         <div class="card-body text-white bg-dark">
             <p>ID: ${engineer.id}</p>
-            <p>GitHub: ${engineer.github}</a></p>
+            <p>GitHub: <a href="${engineer.github}"</a></p>
         </div>
     </div>`;
     });
