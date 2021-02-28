@@ -42,7 +42,7 @@ const generateCards = (managerCard, engineerCard, internCard) => {
         </div>
         <div class="card-body border-danger">
             <p>ID: ${intern.id}</p>
-            <p>Email: ${intern.email}<a href="mailto:${intern.email}"></a></p>
+            <p>Email: ${intern.email}<a href=mailto:${intern.email}></a></p>
             <p>School: ${intern.school}</p>
         </div>
         </div>`;
