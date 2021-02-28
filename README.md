@@ -26,7 +26,7 @@ _________
 
 ## Screenshots
 
-![](staff_1.png)
+![](src/staff_1.png)
 
 **Above:**  *This shot displays how the questions are presented and answered.*
 
@@ -35,7 +35,7 @@ _________
 
 _________
 
-![]staff_2.png)
+![](src/staff_2.png)
 
 _________
 ## Instruction Video
